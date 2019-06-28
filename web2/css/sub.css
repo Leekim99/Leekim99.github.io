@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(header_sub.css);
+@import url(footer.css);
+
+#container{width: 100%;}
+.currentIndex{
+	width: 100%; border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	height: 44px; line-height: 44px;}
+/*gnb2가 나올시 background-color:#0089d0 넣어주기.*/
+
+.currentIndex > span{
+	width: 1200px; margin: 0 auto; display: block;
+	font-size: 16px; color:#a9a9a9;
+}
+.currentIndex > span:before{
+	content: ''; display: inline-block;
+	width: 2px; height: 12px; margin-right:10px;
+	background-color:#ff0000;
+}
+.currentIndex .pgIndex{color:#333;}
+
+.conWrap{width: 1200px; margin: 0 auto; position: relative; margin-bottom:200px;}
+.con_side{
+	width: 300px; padding:40px 0;
+	float: left;
+}
+.con_side h2{font-weight: 300; display: inline-block}
+.con_side h2:last-child{margin-top:20px;}
+.con_side h2 a{text-decoration: none}
+.con_side h2:hover a{color:#0089d0;}
+
+.con_side ul{text-indent: 20px; line-height: 2; margin-top: 10px}
+.con_side ul li a{text-decoration: none; color: #333; font-size:20px; }
+.con_side ul li a:hover{color:#0089d0; }
+
+
+
+
+.con_main{width: 900px;float: right; padding-top: 40px;}
+.sec_1{position: relative}
+
+.sec_1 h3{font-weight: 300; font-size: 40px; text-align: right; }
+.sec_1 p{float: left; color:#4B0082; font-size: 22px; margin-top:-45px;}
+.sec_1 p span{display: inline-block; border-bottom: 1px solid #4B0082}
+
+.tabel_txt{
+	margin-top:150px; height: 400px; width: 900px;
+	background:url(../images/img15.png) no-repeat right top;
+}
+.tabel_txt div{
+	width: 250px; font-size: 15px;
+	line-height: 2;
+}
+.tabel_txt a{position: relative;
+	width: 200px; height: 40px; display: block;
+	border:1px solid #4B0082; color: #4B0082; line-height: 40px;
+	font-size: 14px; text-align: center; margin-top:110px;
+	text-decoration: none; cursor:pointer; border-right:0px;
+}
+.tabel_txt a:before{content: ''; display: block; width: 21px ;height:1px; background-color:#4B0082; transform:rotate(90deg); position: absolute; top:9px; right:-10px; transition:all 0.1s ease;}
+.tabel_txt a:after{content: ''; display: block; width: 21px ;height:1px; background-color:#4B0082; transform:rotate(90deg); position: absolute; top:30px; right:-10px; transition:all 0.1s ease;}
+.tabel_txt a:hover:before{
+	transform:rotate(45deg); top:16px; right:-20px; width: 10px;
+	transition:all 0.2s ease;
+}
+.tabel_txt a:hover:after{
+	transform:rotate(135deg); top:23px; right:-20px; width: 10px;
+	transition:all 0.2s ease;
+}
+
+
+
+.pay_graph{
+	position:absolute; color: #a9a9a9;
+	top: 170px; right: 0; font-size:12px;
+}
+
+
+.sec_2, .sec_3{
+	margin-top:100px;
+}
+.sec_2 h3{
+	position: absolute; border-bottom:1px solid #4B0082;
+	top: 740px; left: 0; color: #4B0082; font-weight: 300
+}
+.sec_2 .con_box{
+	background:url(../images/img16.png)no-repeat top center;
+	width: 240px; padding-top:170px;
+	float: left; margin-right: 90px;
+}
+.sec_2 .con_box:nth-of-type(2){background:url(../images/img17.png)no-repeat top center;}
+.sec_2 .con_box:nth-of-type(3){background:url(../images/img18.png)no-repeat top center;}
+
+
+
+.sec_2 .con_box:last-child{margin-right: 0}
+.sec_2 .con_box span{ text-align: center;
+	display: block; font-size: 18px;
+	padding-bottom: 15px
+}
+.sec_2 .con_box p{line-height: 1.8}
+
+
+
+
+
+.sec_3 h3{
+	position: absolute; border-bottom:1px solid #4B0082;
+	top: 1170px; left: 0; color: #4B0082; font-weight: 300}
+.sec_3 .pay_step{
+	background:url(../images/pMethod1.png)no-repeat top center;
+	width: 187px; padding-top:190px; position: relative;
+	float: left; margin-right: 50px;
+}
+.sec_3 .pay_step:last-child{margin-right: 0}
+
+
+.sec_3 .pay_step:nth-of-type(2){background:url(../images/pMethod2.png)no-repeat top center;}
+.sec_3 .pay_step:nth-of-type(3){background:url(../images/pMethod3.png)no-repeat top center;}
+.sec_3 .pay_step:nth-of-type(4){background:url(../images/pMethod4.png)no-repeat top center;}
+
+
+.pay_step span{
+	display: block; text-align: center; margin-top: 10px;
+}
+.pay_step span:first-child{color:#0089d0; font-size: 14px}
+
+
+
+
+.pay_step span:nth-of-type(2):after{
+	content: ''; display: block; width: 30px; height: 3px;
+	background-color:#ff0000; transform: rotate(135deg);
+	position: absolute; top:119px; right:-40px;
+}
+
+.pay_step span:nth-of-type(2):before{
+	content: ''; display: block; width: 30px; height: 3px; position: absolute;
+	background-color:#ff0000;
+	transform: rotate(45deg); top:100px; right:-40px;
+}
+
+.pay_step:nth-of-type(2) span{text-indent:14px;}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&subset=korean');
+
+
+body, div, a, header, h1, h2, h3, img, nav, ul, li, section, p, br, table, caption, colgroup, col, tr, th, td, thead, tbody, button, small, form, fieldset, input, label, aside, address, header, footer{margin:0; padding:0;}
+body,form,select,button,input{font-size:16px; color:#222;font-family:'노토 산스','Noto Sans KR', sans-serif, '돋움', 'dotum', sans-serif; box-sizing:border-box;}
+header,section, footer, nav, aside, article, small{display:block;}
+table{border-collapse:collapse;}
+img{border:none;}
+ul{list-style:none}
+img,fieldset,button{border:none;}
+address{font-style:normal;}
+
+a:link,
+a:visited{color:#222; text-decoration:none;}
+
+a:hover,
+a:focus,
+a:active{color:#222; text-decoration:underline;}
+
+.skip,legend,caption{
+	width:0px; height:0px; display:block;
+	overflow:hidden; font-size:0;
+	text-indent:-999px; line-height:0;
+}
+#skipNavi{
+	position:absolute; width:100%; z-index:999;
+}
+#skipNavi a{
+	position:absolute; top:-100px;
+}
+
+#skipNavi a:hover,
+#skipNavi a:focus,
+#skipNavi a:active{
+	background-color:blue; color:#fff; font-size:25px;
+	position:absolute; top:0; width:100%; text-align:center;
+	line-height:50px; display:block; padding:30px 0;
+}
+
+.clearfix:after{content: ''; clear:both; display: block}
