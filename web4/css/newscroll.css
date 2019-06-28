@@ -1,0 +1,351 @@
+@charset "utf-8";
+@import url(reset.css);
+    body{font-size:25px}
+	.num1{
+	    position: relative; width: 100vw; margin: 0 auto;
+	    font-weight: 700; overflow:hidden;
+	}
+	.bgCon{
+	    width: 180%; height: 210%; transform: rotate(30deg);
+	    position: fixed; top: 0%; left: 50%; transition: transform 1s ease;
+	    background:linear-gradient(to right, #1e94b8 0, rgba(0,0,0,1));
+	}
+    .bgCon.onMove{
+        transform: rotate(30deg) translateX(60%); transition: all 1s ease
+    }
+/*num1*/
+    .num1 > a{
+        font-size: 1.2em; position: absolute; top: 12%; right: 10%;
+        color: #fff; z-index: 999; opacity: 0.3
+    }
+    .num1 > a:after{
+        display: block; content: ''; width: 150%; height: 2px;
+        background-color: #fff; position: absolute; bottom: 0; left: -5%
+    }
+    .num1 > a:before{
+        display: block; content: ''; width: 2px; height: 100%;
+        background-color: #fff; position: absolute; bottom: -13%;
+        right: -38%; transform: rotate(-45deg)
+    }
+    .num1 > a:hover{
+        position: absolute; right: 10%;
+        color: #fff; text-decoration: none; opacity: 1;
+        animation: ani2 1.5s infinite cubic-bezier(0.655, 0.530, 0.400, 0.755);
+    }
+    .num1 > a:hover:after{
+        display: block; content: ''; width: 150%; height: 2px;
+        background-color: #fff; position: absolute; bottom: 0; left: -5%
+    }
+    .num1 > a:hover:before{
+        display: block; content: ''; width: 2px;
+        height: 100%; background-color: #fff; position: absolute; bottom: -13%;
+        right: -38%; transform: rotate(-45deg)
+    }
+    @keyframes ani2{
+        0%{right: 10%}
+        50%{right: 12%}
+        100%{right: 10%}
+    }
+
+/*새로운 루미오*/
+	.num1 > .tit{font-size: 6em; position: absolute; left: 10%; top: 6%; line-height: 1}
+    .num1 > .tit span{display: block}
+    .num1 > .tit span:nth-of-type(2){color: #1e94b8}
+
+    .num1 > .tit span:nth-of-type(3):before{
+        width:50px; height:3px; content: ''; display: block;
+        background-color:  #cce7ff; transform: rotate(30deg);
+        animation: ani1-1 2s infinite;
+        position: absolute; bottom: -25%; left: 50%; margin-left: -46px
+     }
+    .num1 > .tit span:nth-of-type(3):after{
+        width:50px; height:3px; content: ''; display: block;
+        background-color:  #cce7ff; transform: rotate(-30deg);
+        animation: ani1-2 2s infinite;
+        position: absolute; bottom: -25%; right: 50%; margin-right: -46px
+    }
+    @keyframes ani1-1{
+        0%{transform: rotate(30deg) translate(0,0);}
+        50%{transform: rotate(30deg) translate(6px,10px);}
+        100%{transform: rotate(30deg) translate(0,0);}
+    }
+    @keyframes ani1-2{
+        0%{transform: rotate(-30deg) translate(0,0);}
+        50%{transform: rotate(-30deg) translate(-6px,10px);}
+        100%{transform: rotate(-30deg) translate(0,0);}
+    }
+    .fixedImg{position: fixed; bottom:0; top:0;  width: 100%; text-align: center; height: 100vh}
+    .fixedImg > img{ height: 90vh; padding:5vh 0; max-width: 1200px;}
+
+    .changeImg{position: fixed; top: 25%; left: 5%; opacity: 0; z-index: -1}
+    .changeImg img{width: 25vw; max-width: 500px}
+
+    .num1 > .txt1{
+        position: absolute; left: 6%; top: 30%; font-size: 2.4em;
+        opacity: 0; text-align: right; line-height: 1
+    }
+    .txt1 > .miniTxt{font-size:0.3em; color: #999999;}
+    .num1 > .txt2{
+        position: absolute; right: 4%; top:30%; font-size: 2.4em;
+        color: #fff; opacity: 0; line-height: 1;
+    }
+
+/*num2*/
+    .num2{text-align: center; vertical-align: middle; position: relative; width: 100vw;}
+    .num2 span{display: block; text-align: center;}
+
+ /* section1*/
+    .section1{line-height: 1.5; position: relative; background-color:#111;}
+    .txt1 > span, .txt2 > span{display: inline-block;}
+    .section1 .txt1,
+    .section1 .txt2{font-size: 3em; font-weight: 700; color: #fff;}
+
+    .section1 .txt1{padding-top: 10%;}
+    .section1 .txt2{margin-bottom: 3%; opacity: 0.2;}
+
+    .linkList{margin-top: 150px; padding-bottom: 14%}
+    .linkList li{display: inline-block; margin-right: 10%}
+    .linkList li:last-child{margin:0;}
+    .linkList li a{color:#fff; font-size: 2em; font-weight: 700; opacity: .5; text-decoration: none}
+    .linkList li:hover a{
+    	opacity: 1; text-shadow: 8px 8px 1px #000, -8px -8px 1px rgb(255, 255, 255, 0.5)
+    }
+/*section2*/
+    .section2,
+    .newCon{
+        text-align: left; margin-left: 5%; padding-top:70px;
+        font-weight: 700; overflow: hidden;
+    }
+    .section2 > img{position: absolute; height: 80vh; bottom: 0%; right: 0%; z-index: -2;}
+    .newCon > span{color: #ff8400; display: block; text-align: left; margin-bottom: .5%}
+    .newCon .tit{font-size: 4em;}
+    .newCon p{font-size: 1.2em}
+    .txt2{opacity: 0.2}
+    .txt3{
+        color: #ff8400; font-size: 1.5em; display: block; margin-right: 10%;
+        font-weight: 700; opacity: 0.1
+    }
+/*num3 num4*/
+    .num3,
+    .num4{position: relative; overflow: hidden;}
+    .num3 > img {position: absolute; width: 50vw; bottom: 0%; right:0; z-index: -1}
+
+    .num4{position: relative;}
+    .imgWrapper{position: absolute; bottom:6%; right:-8%;}
+    .imgWrapper > img{height:80vh;}
+    .circle{
+    	background-color:#ffd633; width: 500px; height: 500px; border-radius: 50%;
+    	position: absolute; top: -17%; right: -20%; z-index:-1; opacity:0;
+    }
+
+/*num5*/
+    .num5{position: relative;}
+    .num5bg{
+        font-weight: 700; background-color: #1e94b8; text-align: center;
+        position: relative; width:90%; height: 90%; margin: 0 auto; top:5%; overflow: hidden;
+    }
+    .bg1{
+        width: 80%; height: 300%; transform: rotate(78deg);
+        position: absolute; right: -10%; top: -30%; background-color: #ff8400
+    }
+    .bg2{
+        width: 80%; height: 300%; transform: rotate(-78deg);
+        position: absolute; left: -10%; top: -30%; background-color: #fff
+    }
+    .num5:hover .bg1{transition: all 1s ease; transform: rotate(70deg); top: -40%}
+    .num5:hover .bg2{transition: all 1s ease; transform: rotate(-20deg);left: -30%}
+
+    .num5Img{position: absolute; top:0; width: 100%; height: 100%; text-align: center;}
+    .num5Img img{height: 100vh; vertical-align: middle;}
+}
+
+/*가로로 긴 큰 화면용*/
+@media all and (min-aspect-ratio:16/10) and (min-width: 1601px){
+    body{font-size:38px}
+    .num1 > .tit{font-size: 5em; top:3%}
+    .num1 > a{top: 30%}
+
+    .num1 > .txt1 span,
+    .num1 > .txt2 span{
+        display: block
+    }
+    .fixedImg{top: 2%; width: 100%}
+    .fixedImg > img{height: 100vh;}
+
+    .imgWrapper > img{height: 90vh}
+    .circle{width: 700px; height: 700px}
+
+    .bg1,.bg2{top: -10%;}
+    .num5:hover .bg1{transition: all 1s ease; transform: rotate(20deg); right: -32%}
+    .num5:hover .bg2{transition: all 1s ease; transform: rotate(-20deg);left: -25%}
+}
+
+/*768 1024 = ipad*/
+@media all and (min-aspect-ratio:16/12) and (max-width: 1024px){
+    body{font-size:24px}
+    .txt1 .miniTxt{display: none;}
+    .num1 > .tit{top: 0}
+    .num1 > .txt1{text-align: left}
+    .num1 > .txt1,.num1 > .txt2{font-size: 2.5em; top: 20%}
+    .num1 .txt1 span,
+    .txt2 span{display: block;}
+    .bgCon{left: 25%}
+
+    .changeImg{margin-top: 10%}
+    .changeImg img{width: 30vw}
+    .fixedImg{top: 20%}
+    .fixedImg > img{height: 70vh;}
+
+    .section1 .txt1{padding-top: 15%}
+    .section1 > .txt1, .section1 > .txt2{font-size: 4em;}
+
+    .linkList{margin-top: 100px}
+    .linkList li{display: block;margin: 0}
+    .linkList li a{ font-size: 3.5em; line-height: 2}
+
+    .section2 > img{height: 60vh}
+    #section3 > img{width: 90vw}
+    .newCon{font-size: 20px}
+    .imgWrapper{height: 50vh; bottom: 20%; right: 0}
+    .imgWrapper img{height: 60vh}
+    .num5Img{top: 5%; right: 28%}
+    .bg1{top: -70%}
+    .bg2{top: -50%}
+
+    .num1 > a{font-size: 1.5em; right: 12%; top: 30%}
+    @keyframes ani2{
+        0%{right: 14%}
+        50%{right: 12%}
+        100%{right: 14%}
+    }
+}
+/*ipadPro*/
+@media all and (max-aspect-ratio:16/12) and (max-width: 1024px){
+    body{font-size:22px}
+    .bgCon{left: 2%}
+    .num1 > a{top: 15%; right: 15%; font-size: 1.5em}
+
+    @keyframes ani2{
+        0%{right: 13%}
+        50%{right: 15%}
+        100%{right: 13%}
+    }
+    .num1 > .tit{left: 5%; top: -1%}
+    .num1 > .txt1{top: 20%}
+    .num1 > .txt2{top: 20%}
+    .fixedImg{top: 25%}
+    .fixedImg img{height: 70vh;}
+
+    .changeImg{top: 10%; left: 8%}
+    .changeImg img{width: 30vw}
+
+    .section1 > span > span{display: block}
+    .section1 .txt1,
+    .section1 .txt2{font-size: 2.5em}
+
+    .linkList{margin-top: 50px}
+    .linkList li{margin: 30px; display:block;}
+    .linkList li a{font-size: 2em;}
+
+    .section2 > img{height: 60vh; right: 10%}
+    .num3 > img {width: 90vw}
+
+    .imgWrapper > img{height: 65vh}
+
+    .num5Img{top: 5%}
+}
+/*ipad 768*1024*/
+@media all and (max-aspect-ratio:16/12) and (max-width: 768px){
+    body{font-size:20px}
+    .num1 > span > span{display: block}
+    .num1 .txt1,
+    .num1 .txt2{font-size: 3em; text-align: left; top:14%;}
+
+    .miniTxt span{display: block; line-height: 2}
+
+    .section1 .txt1,
+    .section1 .txt2{font-size: 3em}
+
+    .section2 > img{height: 50vh}
+    .num1 > .tit{font-size: 5em}
+    .num1 > a{top:30%; right: 12%}
+    .num5Img{top: 5%}
+    .imgWrapper > img{height: 50vh}
+}
+/*moblie L / iphoneX*/
+@media all and (max-width:480px){
+    body{font-size: 9px;}
+    .num1 > .tit{left: 5%; top:4%;}
+    .num1 > .tit span{padding-bottom: 10px}
+    .num1 > a{top: 3%; right: 60%; font-size: 2em; color: #333; opacity: .5}
+    .num1 > a:after,
+    .num1 > a:before,
+    .num1 > a:hover,
+    .num1 > a:hover:after,
+    .num1 > a:hover:before{
+        background-color: #333;
+    }
+
+    @keyframes ani2{
+        0%{right: 58%}
+        50%{right: 60%}
+        100%{right: 58%}
+    }
+    .num1 > .txt2,
+    .num1 > .txt1{text-align: center;}
+
+    .txt2{color: #333; transition: transform 1s ease}
+    .bgCon{left: -10%}
+
+    .changeImg{top: 5%; left: 0%}
+    .changeImg img{width: 50vw}
+
+    .circle{top: 32%; right: 1%}
+    .imgWrapper > img{height: 45vh; bottom: 10%}
+
+    .num2 > .section1 > span{font-size: 4em}
+    .section1 > span > span{display: block}
+    .linkList{margin-top: 70px}
+    .linkList li a{ font-size: 3em; }
+
+    .section2 > img{height: 40vh}
+    .num3 > img{width: 100vw}
+    .section2,
+    #section3,
+    #section4{
+        text-align: center; font-size: 1.5em; margin: 0
+    }
+    .section2 > span,
+    #section3 > span,
+    #section4 > span{
+        text-align: center;
+    }
+    .section2 .txt1 span{display: block}
+    .txt3{text-align: center; margin: 0}
+    .bg1{top: -80%}
+    .bg2{top: -60%}
+    .num5Img{left:-58%}
+}
+@media all and (max-width:375px){
+    body{font-size: 8px;}
+    .num1 > .tit{font-size: 7em}
+    .num1 > a{right: 64%}
+    .num1 > .txt1,
+    .num1 > .txt2{font-size: 4em}
+
+    .section1 .txt1{padding-top: 30%}
+    .newCon p{font-size: 1.5em}
+
+    .imgWrapper{bottom: 10%}
+    .num5Img{left: -37%}
+}
+@media all and (max-width:320px){
+    body{font-size: 8px;}
+    .num1 > .tit{font-size: 6em; top: 2%}
+    .num1 > a{right: 58%}
+
+    .section1 .txt1{padding-top: 20%}
+
+    .section1 > .newCon{padding-top: 40px}
+    .newCon p{font-size: 1.3em}
+}

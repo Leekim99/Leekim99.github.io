@@ -1,0 +1,56 @@
+@charset "uft-8";
+@import url(reset.css);
+@media all and (max-width: 1024px){
+	.userWrap,
+	.B2B .conBtnWrap,
+	.machine .conBtnWrap,
+	.con a i,
+	.mini1 span,
+	.fSns,
+	.newsletterWrap{
+		display: none
+	}
+	.gnb1Dep{width: 650px}
+
+/*topBanner*/
+	.topImg{margin-left: -35%}
+	.txt1{font-size: 1.8rem}
+	.closeBtn{right: 10px}
+
+/*sec1*/
+	.boxCon{height: 260px;width: 28%}
+    .boxTit{font-size: 1.4rem}
+    .capTit{font-size: 2rem; color:#ff8400}
+
+	.CapToDoor .conBtnWrap{width: 160px}
+
+	.sec1,
+	.miniWrap{
+		display: inline-block; margin: 40px auto 20px auto
+	}
+
+	.sec1{width: 80%; height: 280px;}
+
+	.CapToDoor{width:34%; background:none;}
+
+	.B2B{background: url(../images/con2_2.gif) no-repeat right 150px}
+	.machine{background-size: 80%; background-position: 60px bottom}
+
+/*mini*/
+	.swapNewslatter{display: block}
+	.miniWrap{
+		width: 19%; display: inline-block; float: right; margin-right: 1%
+	}
+	.miniWrap > .con{display: block; width: 100%}
+	.con a{font-size: 14px; vertical-align: center; line-height: 50px;}
+
+/*product*/
+	.productWrapper{margin-top: 10px;}
+	.mainCon{width: 96%; margin: 0 auto}
+	.price{font-size: 1.2rem; line-height: 50px}
+	.machineList > li{width: 15%}
+
+/*footer*/
+	.footerTop{margin: 0; width: 100%; text-align: center}
+	.footerLink, .contactWrap{width: 49%}
+}

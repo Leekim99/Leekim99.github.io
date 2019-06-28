@@ -1,0 +1,289 @@
+@charset "utf-8";
+@import url(reset.css);
+/*topBanner*/
+    .topWrapper{
+        width: 100%; height: 100px; border-bottom: 1px solid #e6e6e6; position: relative;
+    }
+    .topBanner{
+        position: relative; width:100%; margin: 0 auto; display: block;
+        height: 100%; overflow: hidden; max-width: 1280px
+    }
+    .topBanner:hover{text-decoration: none}
+    .topImg{
+        width: 700px; position: absolute; z-index: 999;
+        top: -120%; left: 50%; margin-left: -27.2%
+    }
+    .topBanner > span{display: block; position: absolute; color: #fff}
+    .txt1{top: 0px; left: 1%; font-size: 1.7rem; position: absolute;}
+    .txt1 span{animation: textani 3s 5s infinite ease alternate; color: #333}
+        .txt1 span:nth-of-type(1){animation-delay:0s;}
+        .txt1 span:nth-of-type(2){animation-delay:0.2s;}
+        .txt1 span:nth-of-type(3){animation-delay:0.4s;}
+        .txt1 span:nth-of-type(4){animation-delay:0.2s;}
+        @keyframes textani{
+            0%{opacity: 1}
+            20%{opacity: 0.8}
+            60%{opacity: 0}
+            100%{opacity: .8}
+        }
+    .txt2{font-size: 0.8rem; bottom: 5px; right: 1%; position: absolute; color: #333;}
+    .closeBtn{
+        width: 40px; height: 40px; display: block;
+        top:15%; right: 2%; position: absolute; z-index: 9999
+    }
+        .closeBtn:before{
+            display: block; content: ''; width: 40px; height: 40px;
+            border-top: 2px solid #333; transform: rotate(45deg);
+            position: absolute; top: 5px; left: -14px
+        }
+        .closeBtn:after{
+            display: block; content: ''; width: 40px; height: 40px;
+            border-top: 2px solid #333; transform: rotate(-45deg);
+            position: absolute; top: 5px; right: -14px
+        }
+
+/*GNB*/
+    #wrapper{width: 100%; position: relative;}
+    #headerWrap{
+        width: 100%; border-bottom: 1px solid #333; background-color: #fff;
+        top:0; position: fixed; z-index: 9999
+    }
+    .header{margin: 20px auto; max-width: 1280px; position: relative}
+    .logo{display: inline-block; float: left; padding: 0 2% 0 2%}
+    .logo a img{width: 65px; height: 65px}
+
+    #gnb{display: inline-block}
+    .gnb1Dep{width: 900px;}
+    .gnb1Dep i{margin-left: 10px; display: none}
+    .gnb1Dep li{float: left; line-height: 65px; margin-right: 5%}
+    .gnb1Dep li a{
+        font-size: 20px; font-weight: 700; color: #5e5e5e; text-decoration: none
+    }
+    .gnb1Dep li a:hover{color:#ff8400;}
+    .gnb1Dep li a:hover i{display:inline-block}
+
+/*gnb2dep*/
+    .gnb2Wrap{
+        position: absolute; width:100%; background-color: #fff; display: none; margin-top:1px;
+        box-shadow: 0px 15px 20px -2px rgba( 200, 200, 200, 0.5); height: 60px
+    }
+    .gnb2Dep{max-width: 1280px; margin: 0 auto; position: relative;}
+    .gnb2Dep > li{
+        height: 60px; width: 100%; line-height: 60px; display: none;
+        position: absolute; top: 0; left: 0; background-color: #fff
+    }
+    .gnb2Dep li.on{display: block}
+    .gnb2Dep > li > ul{margin:0 auto; width:95%}
+    .gnb2Dep > li > ul > li{display: inline-block; margin-right: 20px}
+    .gnb2Dep i{padding-left: 10px; color: #cecece}
+    .gnb2Dep a:hover{text-decoration: none; color: #ff8400}
+    .gnb2Dep a:hover i{color: #ff8400}
+
+    .userWrap{
+        position:absolute; right: 0; top: 0; line-height: 65px; margin-right: 2%
+    }
+    .userWrap a{font-size: 35px; color: #888}
+    .userWrap a:hover{color: orange}
+    .userWrap div{float: left; margin-left: 20px}
+    .menuBtn,
+    .menuClose{
+        display: none
+    }
+
+/*btnGnb*/
+    .swapWrap{
+        background-color: #fff; position: absolute; top: 0px; right: -201px;
+        width: 200px; height: 100vh; padding-top:50px; border-left: 1px solid #333;
+    }
+    .swapGnb li h3 a{text-decoration: none}
+    .swapGnb{font-size: 18px}
+    .swapGnb > li{text-align: center;}
+    .swapGnb > li:last-child a{margin-top: 1%; color: rgb(166, 77, 255)}
+    .swapGnb > li i{margin-left: 6px}
+    .swapGnb > li h3{padding: 10px 3%; position: relative;}
+    .swapGnb > li > ul{display: none; border-bottom: 1px solid #cecece}
+
+    .swapGnb > li h3:before{content: '';display: block;position: absolute; right: 0; left: 0; top: 45px; bottom: 1px}
+    .swapGnb > li:nth-of-type(1) h3:before{background-color: rgb(255, 0, 0,0.5)}
+    .swapGnb > li:nth-of-type(2) h3:before{background-color: rgb(255, 153, 51,0.5)}
+    .swapGnb > li:nth-of-type(3) h3:before{background-color: rgb(255, 204, 0, 0.8)}
+    .swapGnb > li:nth-of-type(4) h3:before{background-color: rgb(0, 153, 0, 0.5)}
+    .swapGnb > li:nth-of-type(5) h3:before{background-color: rgb(0, 102, 255, 0.5)}
+
+    .swapGnb li ul li{line-height: 2.5}
+    .swapGnb li ul li:last-child{margin-bottom: 20px}
+    .swapGnb li ul li a:hover{font-weight: 700; text-decoration: none;}
+    .swapGnb li:nth-of-type(1) ul li a:hover{color: rgb(255, 0, 0, 0.5)}
+    .swapGnb li:nth-of-type(2) ul li a:hover{color: rgb(255, 153, 51,0.5)}
+    .swapGnb li:nth-of-type(3) ul li a:hover{color: rgb(255, 204, 0, 0.8)}
+    .swapGnb li:nth-of-type(4) ul li a:hover{color: rgb(0, 153, 0, 0.5)}
+    .swapGnb li:nth-of-type(5) ul li a:hover{color: rgb(0, 102, 255, 0.5)}
+
+#container{width: 100%; margin: 0 auto; padding-top: 200px}
+
+/*sec1*/
+    .sec1,
+    .miniWrap,
+    .prodWrap{
+        max-width: 1280px;
+    }
+    .sec1{height: 370px}
+    .sec1,
+    .miniWrap{
+        width: 92%; margin: 30px auto;
+    }
+    .boxCon{
+    	height: 350px; width: 23%; float: left; transition: box-shadow 0.7s ease;
+    	margin-right: 1%; padding: 1% 0 0 2%; position: relative; overflow: hidden;
+    	background-color:#fff; box-shadow: 10px 10px 4px rgba(201,201,201,0.6);
+    }
+    .boxCon:hover{box-shadow: 10px 10px 4px rgba(64, 64, 64, 0.6); transition: all 1s ease}
+    .boxCon:hover::before{opacity: 0}
+    .boxCon::before{
+        transition: opacity 1s ease; content: ''; display: block;
+        background-color: rgba(255,255,255,0.3); height: 100%; width: 100%;
+        position: absolute; top: 0; left: 0
+    }
+
+    .conTxtWrap{display: block; position: relative; z-index: 999}
+
+    .boxTxt{line-height: 1.4}
+    .boxTit{font-size: 1.4rem}
+    .boxTit span{color: #333; font-size: 1rem; font-weight: 400; display: block;}
+    .capTit{font-size: 2rem; color:#ff8400;}
+
+    .conBtnWrap{
+        transition: background-color 0.5s ease-in; width: 150px;
+        display: block; background-color: rgba(255,255,255,0.5);
+        height: 50px; border-bottom: 1px solid #333; border-right: 1px solid #333;
+        position: absolute; bottom: 30px
+    }
+    .conBtnWrap span{line-height: 50px}
+    .boxCon:hover > .conBtnWrap{background-color: rgba(255,255,255,1); text-decoration: none}
+
+    .CapToDoor{
+    	background:#fff url(../images/con1.png) no-repeat 0% bottom / 650px; width: 44%;
+    }
+    .boxCon:nth-of-type(1):hover{background-position: 10% bottom}
+
+    .B2B{
+    	background: url(../images/con2_1.png) no-repeat 130px bottom / 180px,
+    	url(../images/con2_2.gif) no-repeat 30px 200px / 50%, #fff
+    }
+    .machine{
+    	background:url(../images/con3.gif) no-repeat 10px bottom / 300px, #fff
+    }
+
+/*sec2*/
+    .swapNewslatter{display: none; background-color: #f1f1f1; height: 113px; margin-top: 5px}
+        .swapNewslatter h3{color: #601986; text-align: center; line-height: 52px}
+        .swapNewslatter input[type="text"]{text-indent: 2%; width:98%}
+        .swapNewslatter a{
+            text-decoration: none; line-height: 31px;
+            display: block; width: 100%; text-align: center; text-decoration: none
+        }
+        .swapNewslatter a:hover{text-decoration: none; background-color: #601986; color: #fff}
+
+    .miniWrap > .con{
+        display: inline-block; width: 33.333%;
+        text-align: center; box-sizing: border-box;
+    }
+    .con a{
+        font-size: 18px; text-decoration: none;
+        width: 100%; line-height: 60px; display:inline-block;
+    }
+    .con a:hover{text-decoration: none}
+    .con a i{font-size: 30px; margin-right: 25px; vertical-align: sub}
+
+    .mini1{background-color: #eb3665;}
+    .mini2{background-color: #f39800;}
+    .miniWrap .mini3{background-color: #8fc31f; margin-right: 0}
+    .mini1:hover a{background-color: #fff; color: #eb3665}
+    .mini2:hover a{background-color: #fff; color: #f39800}
+    .mini3:hover a{background-color: #fff; color: #8fc31f}
+
+/*sec3 product*/
+    .productWrapper{width: 100%; margin-top: 40px}
+    .prodWrap{margin: 0 auto; border-top: 1px solid #333;}
+    .prodtitle{
+        border-bottom: 1px solid #b3b3b3; width: 100%; line-height: 40px;
+        text-indent: 2.5%; background:linear-gradient(to right,#ff8400 2%, #fff 2%);
+    }
+    .mainCon{overflow: hidden; width:96%; margin: 0 auto}
+    .listWrap{position: relative;}
+
+    .machineList{width: 330%; overflow: hidden; margin-left: 2%; height: 500px;}
+    .machineList > li{float: left; width: 10%; position: relative; height: 100%; text-align: center}
+    .machineList > li > img{margin-top: 40px}
+    .machineList > li:hover .txtCon{transform: translateY(-40%); transition: transform .4s linear}
+
+    .machineNavi a{font-size: 30px; color: #696969; line-height: 500px; position: absolute;}
+    .machineNavi a:hover{color: #ff8400}
+    .machineNavi a:nth-of-type(1){top: 0; left: 0}
+    .machineNavi a:nth-of-type(2){top: 0; right: 0}
+
+    .txtCon{
+        background-color:rgba(255, 255, 255, 0.8); width: 94%; color: #222;
+        position: absolute; left: 0%; bottom:-38%; padding: 3% 3% 0 3%; height: 280px
+    }
+    .machineName{display: inline-block; font-size: 1.5rem; font-weight: 700; float: left}
+    .price{font-size: 1.4rem; width: 22%; display: inline-block; float: right; padding-right:3%}
+    .machineTxt{margin-top: 90px; text-align: left;}
+
+    .addList{position: absolute; top: 58px; right: 6%; text-align: right}
+    .addList li{float: left}
+    .addList li:first-child{margin-right: 10px}
+    .addList a{color: #1a8cff; font-size: 0.9em;}
+    .addList li:last-child a{color: #ff3333 }
+
+    .shoppingBtn{width: 100%}
+    .shoppingBtn li{display: inline-block; opacity: .7; width:40%;}
+    .shoppingBtn li:hover{opacity: 1}
+    .shoppingBtn li:first-child{margin-right:3%}
+    .shoppingBtn li a{
+        color: #fff; text-decoration: none; padding:5% 0; font-size: 1rem; width: 100%;
+        border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; display: inline-block
+    }
+    .shoppingBtn li:nth-of-type(1) a{background-color: #ff3333}
+    .shoppingBtn li:nth-of-type(2) a{background-color: #a6a6a6}
+
+/*footer*/
+    #footerWrap{width: 100%; border-top: 1px solid #333;}
+    .footerTopWrap{border-bottom: 1px solid #333; width: 100%}
+
+    .footerTop{
+        margin: 0 auto; max-width: 1280px; width: 98%; line-height: 58px;
+    }
+    .footerLink{display: inline-block; width: 33%}
+    .footerLink > ul li{display: inline-block; margin-right: 10px}
+
+    .contactWrap{font-size: 12px; display: inline-block; width: 33%}
+        .contactWrap h3{display: inline-block; color: #601986; margin-right: 1%;}
+        .contactWrap span{display:inline-block;}
+        .contactWrap span:nth-of-type(1){margin-right: 1%}
+        .contactWrap span:nth-of-type(3){margin-left: 1%}
+
+    .fSns{display: inline-block; width: 9%;}
+        .fSns ul li{display: inline-block; margin-right: 10px}
+        .fSns ul li:last-child{margin: 0}
+        .fSns img{vertical-align: middle}
+
+    .newsletterWrap{display: inline-block; width:23%; position: relative}
+        .newsletterWrap > h3{display: inline-block; color: #601986;}
+        .newsletterWrap input[type="text"]{
+            padding: 2px 0; width:60%; position: absolute; top: 14px; right: 0
+        }
+        .newsletterWrap a{
+            background-color: #c6c6c6; text-decoration: none; line-height: 31px; right: 0;
+            display: inline-block; padding: 0 15px 1px 15px; position: absolute; top: 14px;
+        }
+        .newsletterWrap a:hover{text-decoration: none; background-color: #601986; color: #fff}
+
+    .footerInfo{width:80%; margin: 0 auto; color:#808080; display: block; padding-bottom: 60px}
+    .leftWrap{width: 100%; position: relative; margin:40px auto ;max-width: 1200px}
+    .footerLogo{display: inline-block; float: left; width: 10%; height: 200px}
+    .add{display: block}
+    .info span{display: block}
+
+    .kcpMark{position: absolute; top: 0; right: 0}
+    .kcpMark img{vertical-align: middle; height: 56px;}

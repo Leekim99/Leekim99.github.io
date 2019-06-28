@@ -1,0 +1,25 @@
+@charset "uft-8";
+@import url(reset.css);
+@media all and (max-width: 640px){
+	.footerTop,
+	.addList,
+	.footerTopWrap{display: none}
+
+	.closeBtn{width:60px; height: 30px; top:100%; right: 50%; margin-right: -30px; background-color: #f1f1f1}
+	.closeBtn:before{width: 20px; height: 20px; left: 20px; top: 10px}
+	.closeBtn:after{width: 20px; height: 20px; right: 20px; top: 10px}
+	.topBanner .txt1{font-size: 24px;line-height: 50px}
+	.topImg{z-index: -1;left: 40%;}
+
+	.sec1{height: 700px;}
+
+    .CapToDoor .boxTxt{top: 50px; left: 1%}
+	.boxTit{font-size: 30px}
+
+	.prodtitle{border: none}
+	.prodtitle h3{background-color: #ff8400; color: #fff}
+	.txtCon{border-top: 1px solid #333}
+
+	.productWrapper{clear: both}
+	.machineList > li{width: 30%}
+}

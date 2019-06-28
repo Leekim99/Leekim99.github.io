@@ -1,0 +1,44 @@
+@charset "uft-8";
+@import url(reset.css);
+@media all and (max-width: 768px){
+	#gnb,
+	.fSns,
+	.newsletterWrap,
+	.conBtnWrap,
+	.footerLogo,
+	.miniWrap,
+	.kcpMark,
+	.contactWrap,
+	.txt2{
+		display: none
+	}
+	.topImg{margin-left: -25%}
+
+	.userWrap{display:inline-block}
+	.userWrap div a{font-size: 1.8em}
+	.menuBtn{display: inline-block;}
+    .sec1{height: 700px; width: 100%}
+
+    .CapToDoor,
+    .B2B,
+    .machine{
+    	width: 96%; height: 200px; margin-bottom: 30px
+    }
+
+	.CapToDoor{background:#fff url(../images/con1.png) no-repeat 120% bottom / 60%;}
+	.boxCon:nth-of-type(1):hover{background-position:140% bottom}
+
+	.B2B{
+		background: url(../images/con2_1.png) no-repeat 90% bottom / 20%,
+		url(../images/con2_2.gif) no-repeat 70% bottom / 30%, #fff
+		}
+	.machine{background-size:40%; background-position: 90% bottom}
+
+	.boxTit{font-size: 2rem}
+	.boxTxt{font-size: 1.2rem}
+	.conTxtWrap{padding-left: 3%}
+
+	.footerTop{margin: 0}
+	.footerLink{width:100%; text-align: center;}
+	.leftWrap{text-align: center;}
+}
