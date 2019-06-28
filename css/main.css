@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(mark.css);
+
+/*header*/
+#headerwrapper{padding: 50px 0 50px 50px; position: relative; float: left; z-index: 999;}
+#header{height:100%; float: left; display: block; }
+.kk{font-size: 20px;}
+#gnb{position: absolute; top:150px; height: 100%; left: 15px;}
+#gnb a{transform: rotate(90deg); display:block; margin-bottom:90px; font-weight: 700 }
+.gnbProfile{opacity:0.4; margin:0;}
+
+/*contaniner*/
+#container{padding-top: 112px;}
+.mainVisual{float: left;}
+.listCon{width: 920px; display: block; position: relative; margin-bottom: 100px}
+.listCon:hover .listImg{opacity: 0.8}
+.listImg{width: 920px; margin-bottom: 25px; }
+
+.markwrap{position: absolute; bottom:66px; left: 930px;}
+.listCon h3{
+	font-size: 25px; font-weight: 700; text-align: right;
+}
+.listCon h3 span{margin-right: 40px;}
+
+.sidebar{position: fixed; top:62px; right: 300px; width: 30px; height: 30px; }
+.sidebar span{background-color: #333; width: 30px; height: 3px; position: relative; display: block; border-radius: 3px}
+.sidebar span:before{
+	background-color: #333; width: 30px; height: 3px; border-radius: 3px;
+	content: ''; display: block; position: absolute; left: 0px; top:22px
+}
+.sidebar span:after{
+	background-color: #333; width: 30px; height: 3px; border-radius: 3px;
+	content: ''; display: block; position: absolute; top: 11px; left: 0px
+}
+
+.sidebar.on span{
+	height: 18px; width: 28px; background-color: #fff;
+	border: 2px solid #333; border-radius: 3px;
+}
+.sidebar.on span{
+	height: 18px; width: 28px; background-color: #fff;
+	border: 2px solid #333; border-radius: 3px;
+}
+.sidebar.on span:before{margin-left: -1px; border-radius: 3px}
+.sidebar.on span:after{margin-left: -1px; display: none;}
+
+.preview{
+	position: absolute; top: 100px; left: 800px; z-index:999; width: 600px
+}
+
+/*profile*/
+.profileWrap{display:none;
+	width:980px; height: 590px; background-color: #fff;
+	border:1px solid #333; position: relative
+}
+.profile{width:920px; height: 400px; padding:190px 30px 0 30px; background:url(../images/myself.jpg) no-repeat 800px 298px / 150px; position: relative;}
+.profile dl{font-weight: 500; line-height: 29px}
+.subtitle{
+	padding:3px 10px;width: 80px; text-align:right; float: left;
+	background-color:#333; color: #fff; display: block;
+}
+.profileTxt{margin-left: 120px; margin-bottom:30px;}
+.profileTxt:last-child{letter-spacing: 0.02em}
+
+.profileTxt > span{
+	margin-left: 10px; font-size:12px; padding:2px 5px;
+	vertical-align: 5px; background-color: #ADFF2F;
+}
+.profileTxt > span span{margin-left:5px;}
+
+.skillBtn{
+	border: 1px solid #333; width: 130px; height: 40px; background-color:#fff;
+	display: block; text-align: right; line-height: 50px;
+	padding-right: 8px; position: absolute; bottom: 40px; right: 30px
+}
+
+.skillwrap{height: 590px; padding:50px 20px 20px 45px; position: relative; display: none}
+.skillwrap li{float: left; margin-right: 10px; }
+.skillwrap li.marginNO{margin-bottom: 50px;}
+.skillwrap li dl{text-align: center}
+
+
+
+.skill{
+	background-color:#333; color:#fff; display: inline-block;
+	padding:5px 0; width: 100px; text-align: center; margin-bottom: 10px
+}
+.skillwrap li dl dd.skillTxt{
+	width: 205px; padding-right:10px;border-right:1px solid #222; height: 180px; line-height: 28px; text-align: left
+}
+.skillwrap li.marginNO dl dd.skillTxt{border:none;}
+dd.skillTxt span{font-size:11px; color: #696969; padding-top:18px;display: inline-block}
+
+.profileBtn{
+	border: 1px solid #333; width: 130px; height: 40px; background-color:#fff;
+	display: block; text-align: right; line-height: 50px;
+	padding-right: 8px; position: absolute; bottom: 40px; right: 30px}
+
+#pfCloseBtn{
+	position: absolute; top: -40px; right: -1px;
+	border:1px solid #333; padding:2px 8px; background-color:#fff;
+}
+
+#pfCloseBtn:hover{background-color:#ADFF2F;}

@@ -1,0 +1,68 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(mark.css);
+
+/*header*/
+#headerwrapper{padding: 50px 0 50px 50px; position: fixed; float: left; z-index: 999}
+#header{height:100%; float: left; display: block; }
+#header .KK a{color:#fff;}
+#gnb{position: absolute; top:150px; height: 100%; left: 15px;}
+#gnb a{
+	transform: rotate(90deg); display:block; margin-bottom:90px;
+	font-weight: 700; color: #fff
+}
+
+/*container*/
+.sec1{position: relative; top:0px;}
+.visual{
+	height:750px;
+}
+.visual ul li img{ position: absolute; left:50%; top:20px; display: none}
+.visual ul li:nth-of-type(1) img{display: block}
+.originUrl{
+	font-size: 16px; position: absolute;
+	left:50%; background-color: rgba(255,255,255,0.5);
+	padding: 5px 8px; display: none;
+}
+.originUrl:hover{background-color:rgba(255,255,255,1)}
+
+.visualList{
+	position: absolute; right: 50px; bottom: 50px;
+	text-align: right;
+}
+.visualList li a{opacity: 0.5; color: #fff}
+.visualList li:hover a{color: #fff; opacity: 1}
+.visualList li.on a{color: #fff; opacity: 1; text-decoration: underline}
+li.originPage{margin-top: 10px}
+
+.txtwrap{position: relative;}
+.txtbox{
+	padding: 55px 120px 50px 190px; width: 1000px; margin: 0 auto
+}
+.txtbox .title{font-size:	24px;text-indent: -50px; float: left}
+
+
+.codingInfo{font-size:14px; color: #696969; line-height: 30px; margin-top: 20px;}
+.codingInfo .codingMark{margin-top: 10px}
+.codingInfo .codingMark li{float: left; margin-right: 10px}
+.txtbox p{margin: 60px 0 200px 0; line-height: 28px}
+
+
+.linkBtn{margin-top: 3px; margin-left: 850px; text-indent: 20px}
+.linkBtn li{
+	border-bottom:1px solid #333;display: inline-block; padding: 4px 10px;
+	position: relative; overflow: hidden; background-color:#ADFF2F;
+}
+.linkBtn li a{font-size:18px;}
+
+.linkBtn > li:before{
+	content: ''; display: block; background-color:#333; width: 1px;
+	height: 31px; position: absolute; bottom: -31px; left: 0
+}
+
+.linkBtn li:hover:before{transition: bottom 0.5s ease; bottom: 0px}
+
+.protList{transform: rotate(90deg);position: absolute;}
+.protList li{float: left; margin-right: 20px;}
+.protList li a{opacity: 0.6; color: #333}
+.protList li:hover > a{opacity: 1; color: #333}

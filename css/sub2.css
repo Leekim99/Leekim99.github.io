@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.visual{
+	background:url(../images/02bg.jpg) no-repeat bottom fixed;
+	background-size:cover;
+}
+.originUrl{ margin-left:352px; bottom: 65px}
+
+.visual ul li:nth-of-type(1) img{width: 400px; margin-left:-200px;}
+.visual ul li:nth-of-type(2) img{width: 600px; margin-left:-300px;}
+.visual ul li:nth-of-type(3) img{width: 750px; margin-left:-375px;}
+
+.protList{right: -190px; top:300px;}
