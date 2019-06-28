@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+#footer{border-top: 1px solid #333; }
+.linkSite{width: 100%;margin-top: 20px}
+.linkSite ul{width: 80%; margin: 0 auto;}
+.linkSite ul li{
+	float: left; width: 32%; text-align: center;
+	line-height: 22px; border-right: 1px solid #333
+}
+.linkSite ul li:last-child{border-right: none}
+.linkSite ul li a{font-size: 14px; font-weight: 700}
+
+.siteInfo{
+	font-size: 12px; text-align: center; line-height: 1.5;
+	padding-bottom: 50px; color: #696969
+}
+.copy{margin-top: 20px; color: #696969}

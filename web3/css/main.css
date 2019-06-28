@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import url(header.css);
+@import url(footer.css);
+@import url(reset.css);
+body{background: url(../images/dim.png);}
+#wrapper{max-width: 414px; margin: 0 auto; background-color: #fff; overflow: hidden}
+#container{width: 100%}
+.lectureWrap{margin-top: 20px}
+.lectCon{width: 98%; padding-left: 2%}
+.lectCon .classType{writing-mode: tb-rl; font-size: 12px;vertical-align: top; position: relative;}
+.nowClass:after{
+	content: ''; display: block; width: 5px; height: 100%; background-color: #ffe800;
+	position: absolute; left: 2px; top: 0; z-index: -1
+}
+
+.lectCon h3{writing-mode: tb-rl; display: inline-block; line-height: 1.1; font-size: 16px;}
+.lectselectBox{width: 73%; display: block; float: right; height: 110px;  position: relative; cursor: pointer}
+
+.lect01{
+	background: linear-gradient(to right, rgba(255,255,255,0) 36%, rgba(0,0,0,1) 100%),
+	url(../images/lect01_1.jpg)no-repeat 0 0 / 277px 110px;background-size: cover
+}
+.lect02{
+	background: linear-gradient(to right, rgba(255,255,255,0) 36%, rgba(0,0,0,1) 100%),
+	url(../images/lect02_1.jpg)no-repeat 0 0 / 277px 110px;background-size: cover
+}
+.lect03{background: url(../images/lect03_1.jpg)no-repeat 0 0 / 277px 110px;background-size: cover}
+.lect04{background: url(../images/lect04_1.jpg)no-repeat 0 0 / 277px 110px;background-size: cover}
+.lect05{background: url(../images/lect05_1.jpg)no-repeat 0 0 / 277px 110px;background-size: cover}
+.lect_info{
+	font-size: 12px; display: block; color: #333; position: absolute; bottom: 0; left: 0; padding: 10px 0;
+	background:linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); width: 60%
+}
+.lect_info p{text-indent: 3%}
+
+.numCon{position: absolute; bottom: 5px; right: 3%; display: block; font-size: 11px; color: #fff}
+
+.proBar{width: 100%; background-color: #191919; height: 2px; position: absolute; bottom: 0}
+.nowBar{background-color: #fff; display: block; height: 100%}
+
+.lect01 .nowBar{width: 25%}
+.lect02 .nowBar{width: 33.3333%}
+
+.lecture_info{font-size: 11px; margin-top: 5%; color: #808080; width: 70%;float: right; margin-bottom: 15%}
+
+.conBase > img{width: 100%}
+.conBase h3{font-size: 14px; text-indent: 3%}
+.conBase h3:after{content: '';display: block; background-color: #ffe800; width: 14%; height: 7px; margin-top: -5px}
+.conBase p{padding-left: 3%; font-size: 18px; font-weight: 700; margin-top: 5px}
+
+.direc{width: 100%; position: relative}
+.direc span{
+	font-size: 12px; width: 37%; display: inline-block;
+	padding-left: 3%; line-height: 1.4;
+	position: absolute; bottom: 0; left: 0
+}
+.map{float: right; margin-top: -23px; padding-right: 3%; width: 53.3333%;}
+.map img{max-width: 100%; height: auto;}

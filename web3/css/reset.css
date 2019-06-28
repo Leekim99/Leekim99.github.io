@@ -1,0 +1,22 @@
+@charset "utf-8";
+body, header, footer, div, h1, h3, span, a, img, ul, li, section, nav, p, br, input{margin: 0; padding: 0}
+
+ul{list-style: none}
+img,input{border: none}
+a:link,
+a:visited{color: #222; text-decoration: none}
+
+a:hover,
+a:active,
+a:focus{color: #222; text-decoration: none}
+
+section, nav, header, footer{display: block}
+
+body,input{font-size: 18px; color:#333; font-family: 'Noto Sans KR', sans-serif;}
+.clearfix:after{content: ''; clear: both; display: block}
+.skip{width: 1px; height: 1px; overflow: hidden; line-height: 0; font-size: 0; position: absolute; left: -9999px; visibility: hidden;}
+
+.marginL10{margin-right: 5%}
+.marginT30{margin-top: 30px}
+.marginT50{margin-top: 50px}
+.marginT100{margin-top: 100px}
