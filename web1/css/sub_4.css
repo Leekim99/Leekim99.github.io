@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(footer.css);
+
+
+#wrapper{width:100%; position:relative;}
+
+.headerWrap{width:100%;height:110px;}
+.header{width:1200px; margin:0 auto;position:relative; z-index:999;}
+.header:after{content:''; clear:both; display:block;}/*h1 float 해제*/
+
+.header h1{float:left; margin-top: 30px}
+.header .joinStep{float:right;margin-top: 30px;color:#8c8c8c;}
+.joinStep .currentStep{color:#eb3665; font-weight:bold; padding:0 10px;}
+
+
+
+
+#container{width:1200px;margin:0 auto;}
+
+.impo{color:#004bb2; font-weight:500;}
+
+
+#container form .marginH30{padding: 0 150px;}
+#container form  h2{color:#435478; font-weight:500; font-size:30px; text-align:center; font-weight:600;}
+
+#container fieldset .joinTxtWrap{padding:0 30px;
+border-bottom:1px solid #435478;overflow:hidden; }
+
+
+p.joinTxt{line-height:28px; text-align:center; margin-bottom:30px; font-size:16px; }
+
+p.joinTxt2{color:#8c8c8c; text-align:right;}
+p.joinTxt2 span{background:url(../images/dot.gif) no-repeat 0 9px;padding-left:10px;}
+#container dl dt.joinImpo{background:url(../images/dot.gif) no-repeat 0 17px;}
+
+
+#container fieldset{font-size:14px; }
+#container fieldset h3{font-size:26px; color:#3c3c3c;text-align:center; font-weight:600;}
+#container fieldset a{padding:10px 30px; color:#004bb2; font-weight:600;}
+
+
+
+#container fieldset dl{overflow:hidden;}
+#container fieldset dl dt{float:left; width:200px; font-size:18px; font-weight:500; color:#3c3c3c;
+						line-height:40px; text-indent:12px; vertical-align:middle;
+						}
+
+#container fieldset dl dd{line-height:40px; margin-bottom:30px;}
+#container fieldset dl dd button{padding:10px 12px; background-color:#fff;
+							color:#004bb2; margin-left:15px; line-height:20px;
+							border:1px solid #d3d3d3;}
+
+
+
+
+#container fieldset dl dd input[type="text"],
+#container fieldset dl dd input[type="password"]{border:none; background-color:#f1f1f1; width:150px;padding-left:6px; height:40px;}
+
+#container fieldset dl dd select{border:none; background-color:#f1f1f1; width:70px;padding-left:6px;}
+#container fieldset dl dd select.userEmail{width:156px}
+
+#container fieldset dl dd input[type="text"].phoneNum{width:70px; }
+#container fieldset dl dd input[type="text"].useraddress{width:300px;}
+#container fieldset dl dd input[type="text"].useraddress:first-child{margin-bottom:6px; }
+#container fieldset .addressTxt{padding:0;}
+#container fieldset dt.addressTxt{padding:0; line-height:90px;}
+#container fieldset dd.addressTxt{padding:0; line-height:0;}
+#container fieldset dd select.phoneNumWrap,
+#container fieldset dd select.brithyear,.brithmonth,.brithday,
+#container fieldset dd select.userEmail{height:40px;}
+
+
+
+#container fieldset dl dd .joinDetail{font-size:14px;color:#3c3c3c; margin-left:10px;}
+
+
+#container fieldset .joinBtn{text-align:center;padding:20px;}
+#container fieldset .joinBtn a{color:#004bb2;border:1px solid #d3d3d3; }
+#container fieldset .joinBtn a:hover{text-decoration:none; background-color:#004bb2; color:#fff;}
+

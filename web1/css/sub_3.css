@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(footer.css);
+
+
+#wrapper{width:100%; position:relative;}
+
+.headerWrap{width:100%;height:110px;}
+.header{width:1200px; margin:0 auto;position:relative; z-index:999; overflow:hidden;}
+
+.header h1{float:left; margin-top: 30px}
+.header .joinStep{float:right;margin-top: 30px;color:#8c8c8c;}
+.joinStep .currentStep{color:#eb3665; font-weight:bold; padding:0 10px;}
+
+#container{width:1200px;margin:0 auto;}
+
+.impo{color:#004bb2; font-weight:500;}
+
+
+.joinIntro h2{font-size:30px; color:#3c3c3c;text-align:center;}
+
+
+#container form{/*border-top:2px solid #f1f1f1;*/ padding: 30px 200px;}
+#container form h3{padding-bottom:10px; font-weight:500; font-size:20px;}
+
+#container form .part_1,
+#container form .part_2,
+#container form .part_3{overflow:auto;width:800px; height:180px;
+						border:1px solid #d3d3d3;
+						font-size:16px; line-height:22px; padding:10px;}
+
+#container form fieldset .joinAgreeInfo{text-align:center;color:#3c3c3c;font-weight:500; font-size:16px;}
+#container .joinBtn{text-align:center;padding:10px;}
+
+#container .joinBtn a{padding:5px 10px; background-color:#fff;
+							color:#004bb2; font-size:16px;
+							border:1px solid #d3d3d3;}
+
+#container .joinBtn a:hover{background-color:#004bb2;color:#fff; text-decoration:none;}
+
+dl dd,dl dt,ul li, ol li{line-height:1.7;}
+

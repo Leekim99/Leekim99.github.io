@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&subset=korean');
+
+body, div, a, ul, li, h1, span, img, h3, button, form, fieldset, legend, select, option, optgroup, p, address {margin:0; padding:0;}
+body,form,select,button,input{font-size:14px; color:#222;font-family:'노토 산스','Noto Sans KR', sans-serif, '돋움', 'dotum', sans-serif;}
+
+ul{list-style:none;}
+
+
+a:link,
+a:visited{color:#222; text-decoration:none;}
+
+a:hover,
+a:focus,
+a:active{color:#222; text-decoration:underline;}
+
+table{border-collapse:collapse;}
+
+
+img,fieldset,button{border:none;}
+
+
+address{font-style:normal;}
+.skip,legend,caption{width:0px; height:0px; display:block; overflow:hidden; font-size:0;
+	text-indent:-999px; line-height:0;}
+
+#skipMenu{position:absolute; width:100%; z-index:9999;}
+#skipMenu a{position:absolute; top:-100px;}
+
+#skipMenu a:hover,
+#skipMenu a:focus,
+#skipMenu a:active{background-color:#222; color:#fff; font-size:20px;position:absolute; top:0; width:100%; text-align:center; line-height:50px; display:block;padding:10px 0;}
+
+.marginW20{margin-right:20px;}
+.marginW40{margin-left:40px;}
+
+.marginH20{margin-top:20px;}
+.marginH30{margin-top:30px;}
+.marginH50{margin-top:50px;}
+
+.marginL40{margin-left:40px;}
+.marginB20{margin-bottom:20px;}
